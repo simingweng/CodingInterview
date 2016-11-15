@@ -1,6 +1,5 @@
 package com.simon;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -59,6 +58,10 @@ public class Main {
         int[][] ma = {{1, 0, 0}, {-1, 0, 3}};
         int[][] mb = {{7, 0, 0}, {0, 0, 0}, {0, 0, 1}};
         Logger.getLogger(MoveZeros.class.getName()).info("multiplication of the two matrices is " + printMatrix(MultiplyMatrics.multiply(ma, mb)));
+
+        int[] aa = {1, 3, 4, 7, 0, 0, 0, 0};
+        int[] bb = {2, 5, 9, 11};
+        Logger.getLogger(InPlaceMergeSortedArrays.class.getName()).info("merge result is " + Arrays.toString(InPlaceMergeSortedArrays.merge(aa, bb)));
     }
 
     private static String printMatrix(int[][] matrix){
