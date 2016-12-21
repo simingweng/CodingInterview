@@ -57,17 +57,21 @@ public class Main {
 
         int[][] ma = {{1, 0, 0}, {-1, 0, 3}};
         int[][] mb = {{7, 0, 0}, {0, 0, 0}, {0, 0, 1}};
-        Logger.getLogger(MoveZeros.class.getName()).info("multiplication of the two matrices is " + printMatrix(MultiplyMatrics.multiply(ma, mb)));
+        Logger.getLogger(MultiplyMatrics.class.getName()).info("multiplication of the two matrices is " + printMatrix(MultiplyMatrics.multiply(ma, mb)));
+
+        int[][] matrix = {{1, 0, 0}, {-1, 0, 3}, {0, 1, 0}};
+        int[] vector = {1, 2, 0};
+        Logger.getLogger(MatrixVectorMultiplication.class.getName()).info("multiplication of the two matrices is " + Arrays.toString(MatrixVectorMultiplication.multiply(matrix, vector)));
 
         int[] aa = {1, 3, 4, 7, 0, 0, 0, 0};
         int[] bb = {2, 5, 9, 11};
         Logger.getLogger(InPlaceMergeSortedArrays.class.getName()).info("merge result is " + Arrays.toString(InPlaceMergeSortedArrays.merge(aa, bb)));
     }
 
-    private static String printMatrix(int[][] matrix){
+    private static String printMatrix(int[][] matrix) {
         String result = "";
-        for(int[] row:matrix){
-            result+= Arrays.toString(row);
+        for (int[] row : matrix) {
+            result += Arrays.toString(row);
         }
         return result;
     }
