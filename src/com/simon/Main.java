@@ -68,6 +68,10 @@ public class Main {
         Logger.getLogger(InPlaceMergeSortedArrays.class.getName()).info("merge result is " + Arrays.toString(InPlaceMergeSortedArrays.merge(aa, bb)));
 
         Logger.getLogger(PalindromeSentence.class.getName()).info("Was it a car or a cat I saw? is " + PalindromeSentence.verify("Was it a car or a cat I saw?"));
+
+        int[] j = {-1, 1, 1, 5, -2, 3};
+        int k = 5;
+        Logger.getLogger(SubArraySum.class.getName()).info("{-1, 1, 1, 5, -2, 3} max length of sub array whose sum is 5 is " + SubArraySum.find(j, k));
     }
 
     private static String printMatrix(int[][] matrix) {
