@@ -66,6 +66,8 @@ public class Main {
         int[] aa = {1, 3, 4, 7, 0, 0, 0, 0};
         int[] bb = {2, 5, 9, 11};
         Logger.getLogger(InPlaceMergeSortedArrays.class.getName()).info("merge result is " + Arrays.toString(InPlaceMergeSortedArrays.merge(aa, bb)));
+
+        Logger.getLogger(PalindromeSentence.class.getName()).info("Was it a car or a cat I saw? is " + PalindromeSentence.verify("Was it a car or a cat I saw?"));
     }
 
     private static String printMatrix(int[][] matrix) {
