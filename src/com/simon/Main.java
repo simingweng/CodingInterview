@@ -67,11 +67,14 @@ public class Main {
         int[] bb = {2, 5, 9, 11};
         Logger.getLogger(InPlaceMergeSortedArrays.class.getName()).info("merge result is " + Arrays.toString(InPlaceMergeSortedArrays.merge(aa, bb)));
 
-        Logger.getLogger(PalindromeSentence.class.getName()).info("Was it a car or a cat I saw? is " + PalindromeSentence.verify("Was it a car or a cat I saw?"));
+        Logger.getLogger(PalindromeSentence.class.getName()).info("Was it a car or a cat I saw? is" + (PalindromeSentence.verify("Was it a car or a cat I saw?") ? "" : " not") + " a palindrome");
 
         int[] j = {-1, 1, 1, 5, -2, 3};
         int k = 5;
         Logger.getLogger(SubArraySum.class.getName()).info("{-1, 1, 1, 5, -2, 3} max length of sub array whose sum is 5 is " + SubArraySum.find(j, k));
+
+        String toBeReversed = "dog bites man";
+        Logger.getLogger(ReverseWords.class.getName()).info(toBeReversed + " reversed to " + ReverseWords.reverse(toBeReversed));
     }
 
     private static String printMatrix(int[][] matrix) {
