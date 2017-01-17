@@ -55,10 +55,6 @@ public class Main {
         Logger.getLogger(MoveZeros.class.getName()).info("input array is " + Arrays.toString(array));
         Logger.getLogger(MoveZeros.class.getName()).info("output array is " + Arrays.toString(MoveZeros.moveZeros(array)));
 
-        int[][] ma = {{1, 0, 0}, {-1, 0, 3}};
-        int[][] mb = {{7, 0, 0}, {0, 0, 0}, {0, 0, 1}};
-        Logger.getLogger(MultiplyMatrics.class.getName()).info("multiplication of the two matrices is " + printMatrix(MultiplyMatrics.multiply(ma, mb)));
-
         int[][] matrix = {{1, 0, 0}, {-1, 0, 3}, {0, 1, 0}};
         int[] vector = {1, 2, 0};
         Logger.getLogger(MatrixVectorMultiplication.class.getName()).info("multiplication of the two matrices is " + Arrays.toString(MatrixVectorMultiplication.multiply(matrix, vector)));
@@ -67,14 +63,17 @@ public class Main {
         int[] bb = {2, 5, 9, 11};
         Logger.getLogger(InPlaceMergeSortedArrays.class.getName()).info("merge result is " + Arrays.toString(InPlaceMergeSortedArrays.merge(aa, bb)));
 
+        String stringWithRepeatingLetters = "aa a bb c cc ddd";
+        Logger.getLogger(LetterContinuouslyRepeatedMostly.class.getName()).info("letters continuously repeating for the most are " + LetterContinuouslyRepeatedMostly.find(stringWithRepeatingLetters));
+
+        String toBeReversed = "dog bites man";
+        Logger.getLogger(ReverseWords.class.getName()).info(toBeReversed + " reversed to " + ReverseWords.reverse(toBeReversed));
+
         Logger.getLogger(PalindromeSentence.class.getName()).info("Was it a car or a cat I saw? is" + (PalindromeSentence.verify("Was it a car or a cat I saw?") ? "" : " not") + " a palindrome");
 
         int[] j = {-1, 1, 1, 5, -2, 3};
         int k = 5;
         Logger.getLogger(SubArraySum.class.getName()).info("{-1, 1, 1, 5, -2, 3} max length of sub array whose sum is 5 is " + SubArraySum.find(j, k));
-
-        String toBeReversed = "dog bites man";
-        Logger.getLogger(ReverseWords.class.getName()).info(toBeReversed + " reversed to " + ReverseWords.reverse(toBeReversed));
     }
 
     private static String printMatrix(int[][] matrix) {
